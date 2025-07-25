@@ -1,0 +1,232 @@
+
+/* Updated style.css with Bootstrap utility optimization */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(to bottom, #cddfe2, #e6a4b6, #9ddfe7, #e08f91);
+}
+
+/* Section scroll margin for anchor navigation */
+#about,
+#qualifications,
+#skills,
+#projects,
+#contact {
+  scroll-margin-top: 70px;
+}
+
+/* Resume button */
+.resume-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #267c88;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.resume-btn:hover {
+  background-color: #124c53;
+  color: #fff;
+}
+
+.inner:hover {
+  transform: scale(1.05);
+  transition: all 0.6s ease;
+}
+
+/* About Section */
+.image1 img {
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  border: 1px solid #dd96a9;
+  object-fit: cover;
+}
+.content1 {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 10px;
+}
+.content1 p {
+  text-align: justify;
+  word-spacing: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Qualifications */
+.qualificationItem {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-bottom: 15px;
+}
+.qualificationItem:hover {
+  transform: scale(1.03);
+}
+.qualificationItem h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #267c88;
+  margin-bottom: 10px;
+}
+.qualificationItem p {
+  font-size: 1rem;
+  color: #333;
+  margin: 0;
+}
+
+
+/* Skills */
+.skill-bar {
+  margin-top: 20px;
+}
+.skill-bar p {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #124c53;
+  margin-bottom: 5px;
+}
+.skill-bar span {
+  float: right;
+  color: #e78082;
+}
+progress {
+  width: 100%;
+  height: 20px;
+  appearance: none;
+  margin-bottom: 15px;
+}
+progress::-webkit-progress-bar {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+progress::-webkit-progress-value {
+  background: linear-gradient(to right, #90D4DD, #e6a4b6);
+  border-radius: 10px;
+}
+
+/* Project Cards */
+.projectCard {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.projectCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.2);
+}
+.projectCard img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+.projectCard h3 {
+  font-size: 1.4rem;
+  color: #e78082;
+  margin-bottom: 10px;
+}
+.projectCard p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+.projectLinks a {
+  text-decoration: none;
+  color: #267c88;
+  font-weight: bold;
+  margin: 0 10px;
+  padding: 8px 12px;
+  border: 2px solid #267c88;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.projectLinks a:hover {
+  background-color: #267c88;
+  color: white;
+}
+
+/* Contact Section */
+.contactCard {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+}
+.card a {
+  color: #5D77A8;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.card h3 {
+  color: #e78082;
+}
+
+/* Footer */
+.footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+/* Animations */
+.animate-float {
+  animation: float1 1s ease-in backwards;
+}
+@keyframes float1 {
+  from { transform: translateY(100vh); }
+  to { transform: translateY(0); }
+}
+.animate-scale {
+  animation: scale 3s ease-in;
+}
+@keyframes scale {
+  from { transform: scale(0.5); }
+  to { transform: scale(0.9); }
+}
+.animate-fade-in {
+  animation: fadeIn 2s ease-in-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-project {
+  animation: popUp 1s ease-in-out;
+}
+@keyframes popUp {
+  from { opacity: 0; transform: scale(0.5); }
+  to { opacity: 1; transform: scale(1); }
+}
+.animate-slide {
+  animation: slideUp 1.5s ease forwards;
+}
+@keyframes slideUp {
+  0% { opacity: 0; transform: translateY(100px); }
+  100% { opacity: 1; transform: translateY(0); }
+}

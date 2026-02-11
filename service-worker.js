@@ -11,6 +11,7 @@ const assets = [
   '/images/laravel.png',
   '/images/android-chrome-192x192.png',
   '/images/android-chrome-512x512.png',
+  '/images/job-portal.png',
   '/favicon.ico',
   '/manifest.json',
   '/service-worker.js',
